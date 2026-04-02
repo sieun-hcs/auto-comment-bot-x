@@ -8,6 +8,8 @@ on:
 jobs:
   add-comment:
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
     steps:
       - name: Add comment to new issue
         uses: actions/github-script@v6
